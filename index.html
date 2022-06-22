@@ -41,58 +41,76 @@
 
     <main>
 
-    <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Marvel X - Tudo sobre Marvel</h1>
-                <p class="lead text-muted">Aqui você encontra tudo sobre os Heróis do universo Marvel</p>
-        </div>
-        </div>
-    </section>
-
-    <div class="album py-5 bg-light">
-
-        <div class="container">
-            <div class="row">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Digite aqui...">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">Pesquisar</button>
-                    </div>
-                  </div>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Marvel X - Tudo sobre Marvel</h1>
+                    <p class="lead text-muted">Aqui você encontra tudo sobre os Heróis do universo Marvel</p>
             </div>
-        </div>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.planocritico.com/wp-content/uploads/2017/06/plano-critico-mulher_maravilha_entenda_melhor_plano_critico.jpg">
-                        <div class="card-body">
-                        <h3>Mulher Maravilha</h3>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <a>
-                                <button class="btn btn-sm btn-primary">Mais Informações</button>
-                            </a>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+
+            <div class="container">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Digite aqui...">
+                        <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Pesquisar</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.planocritico.com/wp-content/uploads/2017/06/plano-critico-mulher_maravilha_entenda_melhor_plano_critico.jpg">
+                            <div class="card-body">
+                            <h3>Mulher Maravilha</h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalInfo">Mais Informações</button>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</main>
+        <!-- Modal -->
+        <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Mulher Maravilha</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="https://www.planocritico.com/wp-content/uploads/2017/06/plano-critico-mulher_maravilha_entenda_melhor_plano_critico.jpg" width="200" alt="..." class="img-thumbnail">
+                            </div>
+                            <div class="col-lg-8">
+                                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
-  </div>
-</footer>
+    </main>
 
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="mb-1">Feito para você <b>amante do universo Marvel!</b></p>
+        </div>
+    </footer>
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
   </body>
 </html>
